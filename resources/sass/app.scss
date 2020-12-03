@@ -1,0 +1,59 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Dropzone
+// @import '~dropzone/dist/dropzone';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr{
+  border-top: 1px  solid $coral;
+}
+
+div.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+
+  //Importa regole scss header-navbar e jumbotron
+  @import 'partials/header-navbar';
+  @import 'partials/jumbotron';
+}
+
+main {
+  padding-top: 71px;
+  min-height: calc(100vh - 71px);
+  @import 'partials/main';
+}
+// Regole generali corpo pagina
+//
+//
+//
+//importa regole scss flat-create
+@import 'partials/flat-create';
+//importa regole scss flat-show
+@import 'partials/flat-show';
+//Importa regole scss footer
+@import 'partials/footer';
+//Importa regole scss index
+@import 'partials/flat-index';
+//Importa regole scss sponsors
+@import 'partials/flat-sponsor';
+//importa regole scss row-messages
+@import 'partials/flat-mail';
+//importa regole scss slider
+@import 'partials/slider';

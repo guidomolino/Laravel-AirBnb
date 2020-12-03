@@ -1,0 +1,325 @@
+.btn {
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 7px;
+  font-size: 15px;
+  background-color: $coral;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 5px #aaa;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+}
+
+.btn {
+  &:hover {
+    background-color: #ed3256;
+    color: #fff;
+  }
+}
+
+div.jumbotron, div.flatsearch {
+  width: 100%;
+  height: 100vh;
+  margin-right: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: $primary;
+
+  .jumbo-navbar {
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 6% 0 8%;
+    color: #fff;
+    transition: all .8s;
+
+    a {
+      color: $coral;
+    }
+
+    span.jumbo-span-logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    div.search-bar {
+      display: none;
+      // transition: all 8.5s;
+
+      &.scrolled2 {
+        display: flex;
+      }
+    }
+
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      white-space: nowrap;
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border-radius: 20px;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+          color: $maincolor !important;
+        }
+
+        .fa-bars:before, .fa-user:before {
+          color: white;
+          font-size: 14px;
+        }
+
+        a {
+          color: #fff;
+          font-weight: bold;
+        }
+
+        a.nav-link {
+          margin: 0 5px;
+        }
+      }
+
+      // Dropdown-item
+      li.nav-item.dropdown {
+        border: 1px solid #ddd;
+        // transition: all 0.3s;
+        // position: relative;
+
+        // &:hover {
+        //   transform: scale(1.05);
+        // }
+
+        i {
+          font-size: 10px;
+          color: $maincolor;
+          margin-left: 3px;
+        }
+
+        div.dropdown-menu {
+          position: absolute;
+          left: auto;
+          right: 0;
+          font-size: 12px;
+          box-shadow: 2px 2px 5px #ddd;
+
+          a {
+            color: $maincolor;
+          }
+        }
+      }
+    }
+
+    &.scrolled {
+      background-color: #fefefe;
+      box-shadow: 2px 2px 5px #888;
+      color: $maincolor;
+
+      a {
+        color: $maincolor !important;
+      }
+
+      li {
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #ccc;
+        }
+
+        .fa-bars:before, .fa-user:before {
+          color: $maincolor;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .jumbo-search-bar {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #777;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 2px 2px 5px #ddd;
+    }
+
+    &:focus {
+      outline:none;
+    }
+  }
+
+  div.container {
+    height: 100%;
+  }
+
+  div.row {
+    height: 100%;
+
+    div.jumbo-left-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+    }
+  }
+
+  div.text {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 7px #111;
+
+    h1 {
+
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+
+    }
+  }
+}
+
+div.flatsearch .wrapper {
+
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 80%;
+  height: 80%;
+
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px #111;
+
+  transform: translate(-50% , -50%);
+
+  .left-side {
+    border-right: 1px #ddd solid;
+  }
+
+  .right-side {
+    width: 100%;
+    height: 100%;
+    // overflow: auto;
+
+    .right-side-title {
+      height: 60px;
+    }
+    #results {
+      height: calc(100% - 140px);
+      overflow-y: auto;
+      .card-row {
+        // box-shadow: 1px 1px 3px #aaa;
+        // border: 1px solid #ccc;
+
+      }
+      .card-left{
+        padding-right: 0;
+        padding-left: 0;
+
+      }
+
+      // .card-right {
+      //   border-right: 1px solid #ccc;
+      //   border-top: 1px solid #ccc;
+      //   border-bottom: 1px solid #ccc;
+      // }
+    }
+
+  }
+}
+
+// MEDIA QUERY
+
+@media (max-width: $lg) {
+
+  .jumbo-navbar {
+
+    #jumbo-link-logo {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+
+  .jumbo-navbar {
+    justify-content: center !important;
+
+    #jumbo-link-logo,
+    .jumbo-navlist {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+
+  div.flatsearch .wrapper {
+    width: 90%;
+    height: 100%;
+    position: static;
+    transform: translate(0 , 0);
+    overflow-y: auto;
+    margin-top: 70px;
+
+    .left-side {
+      border-right: none;
+    }
+
+    .right-side {
+      overflow: inherit;
+
+    #results {
+      overflow: inherit;
+
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  div.flatsearch .wrapper {
+    width: 100%;
+    height: 100%;
+
+
+  }
+}

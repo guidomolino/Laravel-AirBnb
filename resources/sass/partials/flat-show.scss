@@ -1,0 +1,127 @@
+
+#back-btn{
+  // position: absolute;
+  // top: 56px;
+  // left: 7px;
+  // background-color: $coral;
+  // color: #fff;
+  // padding: 5px;
+  // border-radius: 5px;
+  // text-align: center;
+  // width: 68px;
+  // // transform: translate(50%, 50%);
+}
+#back-btn:hover{
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+#flatShow {
+  margin-top: 29px;
+
+  #map {
+    height: 505px;
+    width:  100%;
+    background-color: teal;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #main-card > .card-header{
+    padding: 0;
+
+    .justify-content-start {
+      align-items: center;
+
+      h1{
+        padding: 12px 15px;
+      }
+      a{
+        // width: 35px;
+        // height: 102%;
+        position: relative;
+        top:  0px;
+        left: 0px;
+        border-radius: unset;
+        padding: 0;
+
+        i {
+          font-size: 40px;
+          position: relative;
+          right: 0;
+          top: 0;
+          color: $coral;
+        }
+      }
+    }
+  }
+
+  .card-body{
+
+    .badge-success{
+      background-color: $greenbnb;
+    }
+
+    .row-spacer{
+      padding-bottom: 50px;
+
+      .span-serv {
+        margin-right: 10px;
+      }
+    }
+    // css carousel
+    #carouselExampleIndicators{
+
+      .carousel-control-prev-icon, .carousel-control-next-icon{
+        width: 40px;
+        height: 40px;
+      }
+      .carousel-indicators li{
+        width: 40px;
+        height: 5px;
+      }
+    }
+    .services{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .service-item{
+        width: 60px;
+        height: auto;
+
+        .serv-info{
+          position: absolute;
+          transform: translate(-100%, -80%);
+          display: none;
+
+          background-color: $coral;
+          color: white;
+
+          padding: 5px;
+          border-radius: 6px;
+        }
+        i {
+          font-size: 35px;
+          color: $greenbnb;
+          margin: 20px 5px 0 10px;
+        }
+      }
+    }
+
+    #messageBox{
+      .h3{
+        text-align: center;
+      }
+      .card{
+        margin-top: 10px;
+        height: 505px;
+        border-radius: 5px;
+      }
+      button{
+        float: right;
+        padding: 8px 30px;
+      }
+    }
+  }
+}

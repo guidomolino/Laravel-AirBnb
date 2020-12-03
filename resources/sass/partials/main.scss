@@ -1,0 +1,144 @@
+.opacity {
+  opacity: 30%
+}
+
+.btn {
+  margin-top: 1rem;
+  box-shadow: 1px 1px 3px $coralt;
+  border-radius: 7px;
+  font-size: 16px;
+  transition: all 0.3s;
+  border-color: $coralt;
+  background-color: $coral;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+
+  &:hover {
+    background-color: #ed3256;
+    color: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+    border-color: $coral;
+  }
+   &:focus {
+    background-color: #ed3256;
+    color: #fff;
+  }
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  box-shadow: 1px 1px 3px $primaryt;
+  border-radius: 7px;
+  font-size: 16px;
+  transition: all 0.3s;
+  border-color: $primaryt;
+  background-color: $primary;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+
+
+  &:hover {
+    background-color: #006e72 !important;
+    color: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+    border-color: $primary;
+  }
+   &:focus {
+    background-color: #006e72;
+    color: #fff;
+  }
+}
+
+
+.container {
+
+  .text {
+    color: $maincolor;
+    text-align: left;
+
+    h3 {
+      margin-left: 20px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  .card {
+
+    margin-top: 20px;
+
+    .card-header{
+      background-color: white;
+      // color: white;
+      text-align: center;
+      font-size: 20px;
+      border-bottom: 2px solid $coral;
+    }
+
+  }
+
+
+  .row.homepage {
+
+    .col-xs-12 {
+      margin-bottom: 15px;
+
+      .card {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 300px;
+        box-shadow: 2px 2px 5px #ddd;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+
+        img {
+          max-height: 150px;
+        }
+        .card-body {
+
+          .card-title {
+            font-size: 14px;
+          }
+
+          .card-text {
+            font-size: 14px;
+          }
+
+          a.btn.btn-primary {
+            border-color: $maincolor;
+            color: $maincolor;
+            background-color: #fff;
+            transition: all 0.3s;
+
+            &:hover {
+              border-color: $coral;
+              background-color: $coral;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERY
+
+@media (min-width: $md){
+  .container {
+    .text {
+      text-align: center;
+
+      h3 {
+
+      }
+    }
+  }
+}

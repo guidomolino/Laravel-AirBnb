@@ -1,0 +1,55 @@
+.list-index {
+
+  // border: #ddd solid 1px;
+  // box-shadow: 2px 2px 2px #ccc;
+  // border-radius: 10px;
+  padding-left: 0;
+  padding-right: 0;
+
+  .col-xs-12, .col-md-12, .col-xl-4, .col-xl-8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .index-img {
+    min-width: 320px;
+    // height: auto;
+    height: 240px;
+    // background-color: lightblue;
+    text-align: center;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  .title-text {
+
+    padding: 0 20px;
+    margin-bottom: 15px;
+
+    h5 {
+      font-weight: bold;
+    }
+  }
+  .index-button {
+    flex-wrap: wrap;
+    padding: 10px;
+
+    a {
+      margin: 5px;
+      font-size: 16px;
+    }
+  }
+
+}
+
+h2 {
+  text-align: center;
+  // margin: 30px 0;
+  color: $coral;
+  font-weight: 600;
+}

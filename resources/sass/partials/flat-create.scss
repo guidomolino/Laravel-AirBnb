@@ -1,0 +1,201 @@
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 600 !important;
+    line-height: 1.6;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $primarytt;
+    border: 1px solid $greenbnb;
+    border-radius: 0.25rem ;
+}
+
+.input-group-prepend {
+
+  margin-right: 0;
+}
+
+.card-header
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+
+  a {
+    font-size: 35px;
+    color: $coral;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+  }
+}
+
+form.flat-create, form.flat-search {
+
+  .form-control:focus:invalid {
+    border-color: $danger;
+    box-shadow: 0 0 3px  $danger;
+  }
+  .input-group-prepend{
+    label{
+      color: $greenbnb;
+    }
+  }
+
+  .textInput{
+    .input-group-prepend{
+      width: 100%;
+      margin-right: 0;
+
+      label{
+        display: block;
+        width: 100%;
+        height: 28px;
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+    #input-title{
+      label{
+        border-radius: 5px 5px 0 0;
+        h6{
+          // font-weight: bold;
+        }
+      }
+      input{
+        border-radius: 0;
+      }
+      .form-control{
+        text-align: center;
+        font-weight: bold;
+        padding: 5px;
+      }
+    }
+    #input-desc{
+      label{
+        border-radius: 0;
+      }
+      textarea{
+        border-radius: 0 0 5px 5px;
+      }
+      .form-control{
+        padding: 10px 15px;
+      }
+    }
+
+  }
+
+  .numInput{
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // margin: 20px 0;
+
+    .input-group{
+      // width: 40%;
+      // margin: 10px;
+      //
+      // .input-group-prepend , select , input {
+      //   height: 30px;
+      // }
+      //
+      .custom-select{
+        text-align-last: center;
+        // line-height: 15px;
+      }
+
+      .form-control{
+        text-align: center;
+
+      }
+
+      .radius{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+  .sec-title{
+    width: 30%;
+    height: 32px;
+
+    padding-top: 5px;
+    text-align: center;
+
+    border-radius: 5px;
+    background-color: $primary;
+    color: white;
+
+    h5{
+
+    }
+  }
+
+  .addressInput{
+    .add_input{
+      text-align: center;
+    }
+
+  }
+
+  .checkInput{
+
+    .serv-list{
+      display:flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      label{
+        user-select: none;
+      }
+    }
+  }
+
+  #imgInput{
+
+    margin: 200px;
+
+    .custom-file-input{
+
+    }
+
+    #prevContainer{
+      display: none;
+      max-width: 200px;
+      max-height:200px;
+    }
+
+  }
+
+
+  .btnInput{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+
+  @media (max-width: $sm) {
+    .numInput{
+
+      // margin: 0;
+
+      .input-group{
+        width: 90%;
+
+      }
+    }
+  }
+
+
+}
